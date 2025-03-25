@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Gigz - Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gigz - College Event Platform</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Gigz - College Events & Performances</h1>
+        <h1>🎸 Gigz 🎤</h1>
         <nav>
-            <a href="index.html">Home</a> | 
-            <a href="auth.html">Login/Sign-Up</a> | 
-            <a href="events.html">Events</a>
+            <button onclick="displayEvents()">Events</button>
+            <button onclick="displayUsers()">Users</button>
         </nav>
     </header>
     <main>
-        <h2>Upcoming Events</h2>
-        <div id="eventsList"></div>
+        <section id="content">
+            <h2>Welcome to Gigz!</h2>
+            <p>Connect with talent and events at your campus.</p>
+        </section>
     </main>
-    <script src="events.js"></script>
+    <footer>
+        <p>&copy; 2025 Gigz, College Performance Hub</p>
+    </footer>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

@@ -1,8 +1,9 @@
-document.getElementById('signupForm').onsubmit = e => {
+document.getElementById('signupForm')?.addEventListener('submit', (e) => {
     e.preventDefault();
-    alert('Account successfully created!');
-};
-document.getElementById('loginForm').onsubmit = e => {
+    alert('Signed up successfully!');
+});
+
+document.getElementById('loginForm')?.addEventListener('submit', (e) => {
     e.preventDefault();
-    alert('Successfully logged in!');
-};
+    alert('Logged in successfully!');
+});
